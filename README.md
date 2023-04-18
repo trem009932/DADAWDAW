@@ -88,7 +88,7 @@ if game.PlaceId == 13822889 then
 	PlayerTab:AddButton({
 		Name = "Anti AFK",
 		Callback = function()
-			loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/anti-afk%20via%20autofocus.txt"))()
+			loadstring(game:HttpGet("https://pastebin.com/raw/mHiBCJXc"))()
 		  end    
 	})
 
@@ -128,7 +128,8 @@ if game.PlaceId == 13822889 then
 		Icon = "rbxassetid://4483345998",
 		PremiumOnly = false
 	})
-	
+	DupeTab:AddParagraph("Read before dupe","Dont click Q T P or it wipes your base")	
+
 	local N=game:GetService("VirtualInputManager")
 	
 	DupeTab:AddSlider({
@@ -380,6 +381,14 @@ if game.PlaceId == 13822889 then
 		  end    
 	})
 	
+	DupeTab:AddParagraph("Timer","Use the timer to time your dupes")
+	DupeTab:AddButton({
+		Name = "Timer",
+		Callback = function()
+			loadstring(game:HttpGet('https://pastebin.com/raw/EVp7P4fF'))()
+		  end    
+	})
+
 	local BaseTab = Window:MakeTab({
 		Name = "Base",
 		Icon = "rbxassetid://4483345998",
